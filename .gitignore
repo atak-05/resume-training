@@ -1,4 +1,4 @@
 venv
 idea
 db.sqlite3
-/resume1/.env
+/resume1/docker.env
