@@ -1,4 +1,4 @@
 venv
-resume1/.env/
-idea
+.idea
 db.sqlite3
+/resume1/.env
