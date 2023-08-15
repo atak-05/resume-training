@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="feat:  use ready template">
-      <change afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/includes/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/includes/scripts.html" afterDir="false" />
+    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="refactor: create includes for index and contact">
+      <change afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +167,7 @@
       <workItem from="1692106859536" duration="1623000" />
       <workItem from="1692108500499" duration="1227000" />
       <workItem from="1692109743413" duration="1355000" />
-      <workItem from="1692124540950" duration="777000" />
+      <workItem from="1692124540950" duration="4086000" />
     </task>
     <task id="LOCAL-00001" summary="del : deleted unwanted files">
       <option name="closed" value="true" />
@@ -348,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692108823279</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat:  use ready template">
+      <option name="closed" value="true" />
+      <created>1692125461519</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1692125461519</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +384,7 @@
     <MESSAGE value="refactor:  create includes" />
     <MESSAGE value="refactor:  create layout" />
     <MESSAGE value="feat:  create static-media tags and urls" />
-    <MESSAGE value="feat:  use ready template" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:  use ready template" />
+    <MESSAGE value="refactor: create includes for index and contact" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: create includes for index and contact" />
   </component>
 </project>
