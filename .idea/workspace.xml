@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="feat:  create static-media tags and urls">
-      <change afterPath="$PROJECT_DIR$/templates/about-us.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/contact_process.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/elements.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/portfolio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/prepros-6.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/services.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/single-blog.html" afterDir="false" />
+    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="feat:  use ready template">
+      <change afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/includes/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/includes/scripts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/abyss-arts-amp-crafts-witch2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +168,9 @@
       <workItem from="1692102701723" duration="30000" />
       <workItem from="1692102745096" duration="3731000" />
       <workItem from="1692106859536" duration="1623000" />
-      <workItem from="1692108500499" duration="206000" />
+      <workItem from="1692108500499" duration="1227000" />
+      <workItem from="1692109743413" duration="1355000" />
+      <workItem from="1692124540950" duration="777000" />
     </task>
     <task id="LOCAL-00001" summary="del : deleted unwanted files">
       <option name="closed" value="true" />
@@ -337,7 +332,23 @@
       <option name="project" value="LOCAL" />
       <updated>1692104420208</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="feat:  use ready template">
+      <option name="closed" value="true" />
+      <created>1692108809664</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1692108809664</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat:  use ready template">
+      <option name="closed" value="true" />
+      <created>1692108823279</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1692108823279</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,6 +379,7 @@
     <MESSAGE value="refactor:  create includes" />
     <MESSAGE value="refactor:  create layout" />
     <MESSAGE value="feat:  create static-media tags and urls" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:  create static-media tags and urls" />
+    <MESSAGE value="feat:  use ready template" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  use ready template" />
   </component>
 </project>
