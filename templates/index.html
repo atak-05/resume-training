@@ -1,9 +1,9 @@
 {% extends 'layout.html' %}
-
+{%  load static %}
 {% block content %}
          <div class="row">
         <div class="col-md-12">
-            <h1>
+            <h1 class="myHeader">
                 Resume App
             </h1>
         </div>
@@ -11,5 +11,13 @@
     <p>
         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consectetur et, fuga, illum maiores nobis nulla omnis quam quasi quis sapiente sit veritatis. Delectus dolorum numquam perferendis quo quod recusandae?</span><span>Culpa, cum debitis dolor doloremque dolores error et eveniet facere, fugit hic impedit iure maiores, nobis odio perferendis quae ratione rerum sint tempore veniam. Deleniti eaque excepturi nulla quod veritatis!</span><span>Laboriosam maiores maxime numquam officia, possimus tempora tenetur ut voluptate voluptatem voluptatum? Accusantium aliquid, at atque deleniti dolore eligendi impedit, in iste provident quaerat, quibusdam reprehenderit saepe sunt totam vero.</span><span>At est harum ipsa ipsum officiis recusandae. Adipisci aliquid architecto consectetur culpa cum, dolore enim hic iste iusto laboriosam minus nihil nulla odit officia praesentium quibusdam repellendus saepe veritatis voluptates.</span><span>A blanditiis dicta dignissimos enim, error eum labore mollitia quasi repudiandae. Atque aut consequuntur culpa doloremque dolores facilis minus, nostrum officia perspiciatis quia rem unde voluptatem. Accusantium asperiores totam ut?</span><span>Beatae consectetur deleniti earum eveniet iusto minima nihil, qui veritatis. Atque aut debitis hic id ipsa itaque laudantium, molestias nam officiis porro, possimus quas rem unde velit veritatis. Deserunt, voluptas!</span><span>Ab aliquid culpa, debitis dolorem dolores dolorum et fuga harum labore magnam natus necessitatibus neque nesciunt nisi non, officiis omnis quidem quos tempore temporibus totam ut vitae. Esse, modi, nostrum.</span><span>Animi aperiam deleniti, distinctio dolorem dolores, eaque est eum explicabo facere illo iusto molestiae nam pariatur possimus praesentium quam quibusdam quo quos repellat saepe sint tempora veritatis vitae voluptates voluptatibus?</span><span>Ad, aliquid assumenda at dolore eaque excepturi illo labore modi non nostrum odio quasi quidem, tempora ullam vero voluptatem voluptatibus. A architecto atque, consequuntur cumque itaque maxime perspiciatis quibusdam quidem?</span><span>Assumenda atque beatae, consequatur dolor dolore explicabo inventore iste laborum molestiae non odio, porro praesentium quidem quis quo recusandae repellat repudiandae saepe sapiente, tempora tempore voluptas voluptates. Aperiam laboriosam, vel.</span>
     </p>
+    <div class="card" style="width: 18rem;">
+      <img src="{% get_media_prefix  %}abyss-arts-amp-crafts-witch2.png " class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
 {% endblock %}
 
