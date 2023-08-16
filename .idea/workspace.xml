@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="refactor: create layout structure">
-      <change afterPath="$PROJECT_DIR$/contact/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/views.py" afterDir="false" />
+    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="feat: create contact application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/resume1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/resume1/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact_process.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +166,7 @@
       <workItem from="1692108500499" duration="1227000" />
       <workItem from="1692109743413" duration="1355000" />
       <workItem from="1692124540950" duration="6287000" />
-      <workItem from="1692176537066" duration="3136000" />
+      <workItem from="1692176537066" duration="4062000" />
     </task>
     <task id="LOCAL-00001" summary="del : deleted unwanted files">
       <option name="closed" value="true" />
@@ -376,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692128992139</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="feat: create contact application">
+      <option name="closed" value="true" />
+      <created>1692182645521</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1692182645521</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,6 +401,7 @@
     <MESSAGE value="feat:  create static-media tags and urls" />
     <MESSAGE value="refactor: create includes for index and contact" />
     <MESSAGE value="refactor: create layout structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: create layout structure" />
+    <MESSAGE value="feat: create contact application" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create contact application" />
   </component>
 </project>
