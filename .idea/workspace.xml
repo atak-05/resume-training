@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="feat: create contact application">
+    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="feat: create general settings model">
+      <change afterPath="$PROJECT_DIR$/core/migrations/0002_rename_generalsettings_generalsetting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/migrations/0003_generalsetting_description_generalsetting_name_and_more.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +32,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/templates/layout.html" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -166,7 +172,9 @@
       <workItem from="1692108500499" duration="1227000" />
       <workItem from="1692109743413" duration="1355000" />
       <workItem from="1692124540950" duration="6287000" />
-      <workItem from="1692176537066" duration="4062000" />
+      <workItem from="1692176537066" duration="4950000" />
+      <workItem from="1692188332567" duration="1682000" />
+      <workItem from="1692271627037" duration="1370000" />
     </task>
     <task id="LOCAL-00001" summary="del : deleted unwanted files">
       <option name="closed" value="true" />
@@ -368,7 +376,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692182645521</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="feat: create general settings model">
+      <option name="closed" value="true" />
+      <created>1692185870212</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1692185870212</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,6 +418,7 @@
     <MESSAGE value="refactor: create includes for index and contact" />
     <MESSAGE value="refactor: create layout structure" />
     <MESSAGE value="feat: create contact application" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create contact application" />
+    <MESSAGE value="feat: create general settings model" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create general settings model" />
   </component>
 </project>
