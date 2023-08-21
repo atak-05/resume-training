@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="refactor: apply image setting">
+    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="refactor: create abstract model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +179,7 @@
       <workItem from="1692280442123" duration="2870000" />
       <workItem from="1692352684933" duration="3294000" />
       <workItem from="1692356238990" duration="1438000" />
-      <workItem from="1692610956209" duration="7754000" />
+      <workItem from="1692610956209" duration="8266000" />
     </task>
     <task id="LOCAL-00001" summary="del : deleted unwanted files">
       <option name="closed" value="true" />
@@ -420,7 +421,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692646534789</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="refactor: create abstract model">
+      <option name="closed" value="true" />
+      <created>1692646834068</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1692646834068</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,6 +468,7 @@
     <MESSAGE value="refactor: application of general settings" />
     <MESSAGE value="feat: create image setting model" />
     <MESSAGE value="refactor: apply image setting" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: apply image setting" />
+    <MESSAGE value="refactor: create abstract model" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: create abstract model" />
   </component>
 </project>

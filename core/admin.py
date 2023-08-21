@@ -21,5 +21,11 @@ class ImageSettings(admin.ModelAdmin):
 
 
 
-
+@admin.register(Skill)
+class Skill(admin.ModelAdmin):
+    list_display = ['id', 'order','name','percentage','updated_date','created_date']
+    search_fields = ['name']
+    list_editable = ['order','name','percentage',]
+    class Meta:
+        model =Skill
 
