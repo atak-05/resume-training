@@ -12,11 +12,11 @@ class AbstractModel(models.Model):
     class Meta:
         abstract = True
 
+
 class GeneralSetting(AbstractModel):
     name = models.CharField(max_length=254, default='', verbose_name='name', help_text='this is variable of settings')
     description = models.CharField(max_length=254, default='', blank=True, verbose_name='description', help_text='')
     parameters = models.CharField(max_length=254, default='', blank=True, verbose_name='parameters', help_text='')
-
 
     def __str__(self):
         return f"General Setting: {self.name}"
@@ -28,10 +28,10 @@ class GeneralSetting(AbstractModel):
 
 
 class ImageSettings(AbstractModel):
-    name = models.CharField(default='', max_length=254,blank=True, verbose_name='Name', help_text='This is variable of setting.')
-    description=models.CharField(default='', max_length=254,blank=True, verbose_name='Description', help_text='')
-    file=models.ImageField(default='', blank=True, verbose_name='Image', help_text='',upload_to='images/')
-
+    name = models.CharField(default='', max_length=254, blank=True, verbose_name='Name',
+                            help_text='This is variable of setting.')
+    description = models.CharField(default='', max_length=254, blank=True, verbose_name='Description', help_text='')
+    file = models.ImageField(default='', blank=True, verbose_name='Image', help_text='', upload_to='images/')
 
     def __str__(self):
         return f"Image Setting: {self.name}"
@@ -41,10 +41,13 @@ class ImageSettings(AbstractModel):
         verbose_name_plural = "Image Settings"
         ordering = ("name",)
 
+
 class Skill(AbstractModel):
-    order = models.IntegerField(default=0,verbose_name="Order")
-    name = models.CharField(default='', max_length=254,blank=True, verbose_name='Name', help_text='This is variable of setting.')
-    percentage = models.IntegerField(default=50, verbose_name="Percent",validators=[MinValueValidator(0),MaxValueValidator(100)])
+    order = models.IntegerField(default=0, verbose_name="Order")
+    name = models.CharField(default='', max_length=254, blank=True, verbose_name='Name',
+                            help_text='This is variable of setting.')
+    percentage = models.IntegerField(default=50, verbose_name="Percent",
+                                     validators=[MinValueValidator(0), MaxValueValidator(100)])
 
     class Meta:
         verbose_name = "Skill"
@@ -53,11 +56,11 @@ class Skill(AbstractModel):
 
 
 class Experience(AbstractModel):
-    company_name = models.CharField(max_length=254,default='',blank=True,verbose_name='Company Name')
-    job_title = models.CharField(max_length=254,default='',blank=True,verbose_name='Job Title')
-    job_location = models.CharField(max_length=254,default='',blank=True,verbose_name='Job Location')
-    start_date= models.DateField(verbose_name='Start Date')
-    end_date= models.DateField(verbose_name='End Date',null=True,default=None)
+    company_name = models.CharField(max_length=254, default='', blank=True, verbose_name='Company Name')
+    job_title = models.CharField(max_length=254, default='', blank=True, verbose_name='Job Title')
+    job_location = models.CharField(max_length=254, default='', blank=True, verbose_name='Job Location')
+    start_date = models.DateField(verbose_name='Start Date')
+    end_date = models.DateField(verbose_name='End Date', null=True, default=None)
 
     def __str__(self):
         return f"Experience: {self.company_name}"
@@ -67,12 +70,13 @@ class Experience(AbstractModel):
         verbose_name_plural = "Experiences"
         ordering = ("start_date",)
 
+
 class Education(AbstractModel):
-    school_name = models.CharField(max_length=254,default='',blank=True,verbose_name='School Name')
-    major = models.CharField(max_length=254,default='',blank=True,verbose_name='Major')
-    department = models.CharField(max_length=254,default='',blank=True,verbose_name='Department')
-    start_date= models.DateField(verbose_name='Start Date')
-    end_date= models.DateField(verbose_name='End Date',null=True,default=None)
+    school_name = models.CharField(max_length=254, default='', blank=True, verbose_name='School Name')
+    major = models.CharField(max_length=254, default='', blank=True, verbose_name='Major')
+    department = models.CharField(max_length=254, default='', blank=True, verbose_name='Department')
+    start_date = models.DateField(verbose_name='Start Date')
+    end_date = models.DateField(verbose_name='End Date', null=True, default=None)
 
     def __str__(self):
         return f"Education: {self.school_name}"
@@ -84,9 +88,9 @@ class Education(AbstractModel):
 
 
 class SocialMedia(AbstractModel):
-    link= models.URLField(default='',max_length=254,blank=True,verbose_name='Link')
-    icon= models.CharField(default='',max_length=254,blank=True,verbose_name='Icon')
-    order = models.IntegerField(default=0,verbose_name="Order")
+    link = models.URLField(default='', max_length=254, blank=True, verbose_name='Link')
+    icon = models.CharField(default='', max_length=254, blank=True, verbose_name='Icon')
+    order = models.IntegerField(default=0, verbose_name="Order")
 
     def __str__(self):
         return f"Social Media: {self.link}"
@@ -94,4 +98,17 @@ class SocialMedia(AbstractModel):
     class Meta:
         verbose_name = "Social Media"
         verbose_name_plural = "Social Media"
-        ordering=("order",)
+        ordering = ("order",)
+
+class Document(AbstractModel):
+    order = models.IntegerField(default=0, verbose_name="Order")
+    file=models.FileField(default='',max_length=254, blank=True, verbose_name='File',upload_to='documents/')
+    button_text= models.CharField(default='',max_length=254, blank=True, verbose_name='Button Text')
+    slug=models.SlugField(default='',max_length=254, blank=True, verbose_name='Slug')
+    def __str__(self):
+        return f"Document: {self.slug}"
+
+    class Meta:
+        verbose_name = "Document"
+        verbose_name_plural = "Documents"
+        ordering = ("order",)
