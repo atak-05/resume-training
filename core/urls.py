@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import index, redirect_urls
+from .views import about, redirect_urls
 
 urlpatterns= [
-    path('',index, name='index'),
+    path('',about, name='index'),
     path('<slug>/',redirect_urls, name='redirect_urls'),
+    path('about-me',about, name='about'),
 
 ]

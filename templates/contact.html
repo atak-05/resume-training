@@ -40,7 +40,7 @@
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
                             <h6>California, United States</h6>
-                            <p>Santa monica bullevard</p>
+                            <p>Santa monica boulevard</p>
                         </div>
                         <div class="info_item">
                             <i class="lnr lnr-phone-handset"></i>
@@ -60,22 +60,22 @@
                         {% csrf_token %}
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name"
-                                       placeholder="Enter your name">
+                                <label for="{{ contact_form1.name.id_for_label }}"></label><input type="text" class="form-control" id="{{ contact_form1.name.id_for_label }}" name="{{ contact_form1.name.html_name }}"
+                                                                                                  placeholder="Enter your name">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="email" name="email"
-                                       placeholder="Enter email address">
+                                <label for="{{ contact_form1.email.id_for_label }}"></label><input type="email" class="form-control" id="{{ contact_form1.email.id_for_label }}" name="{{ contact_form1.email.html_name }}"
+                                                                                                   placeholder="Enter email address">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="subject" name="subject"
-                                       placeholder="Enter Subject">
+                                <label for="{{ contact_form1.subject.id_for_label }}"></label><input type="text" class="form-control" id="{{ contact_form1.subject.id_for_label }}" name="{{ contact_form1.subject.html_name }}"
+                                                                                                     placeholder="Enter Subject">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                            <textarea class="form-control" name="message" id="message" rows="1"
-                                      placeholder="Enter Message"></textarea>
+                                <label for="{{ contact_form1.message.id_for_label }}"></label><textarea class="form-control" name="{{ contact_form1.message.html_name }}" id="{{ contact_form1.message.id_for_label }}" rows="1"
+                                                                                                        placeholder="Enter Message"></textarea>
                             </div>
                         </div>
                         <div class="col-md-12 text-right">
@@ -96,11 +96,11 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="fa fa-close"></i>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                        <i class="fa fa-close" ></i>
                     </button>
                     <h2>Thank you</h2>
-                    <p>Your message is successfully sent...</p>
+                    <p>Contact form sent successfully</p>
                 </div>
             </div>
         </div>
@@ -138,4 +138,6 @@
     <!--gmaps Js-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
     <script src="{% static 'js/gmaps.min.js' %}"></script>
+
+}
 {% endblock %}

@@ -17,9 +17,9 @@
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item active"><a class="nav-link" href="{% url 'index' %} ">Home</a></li>
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
 
-								<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
 									<ul class="dropdown-menu">
@@ -35,9 +35,7 @@
 									</ul>
 								</li>
 								<li class="nav-item"><a class="nav-link" href="{% url 'contact' %} ">Contact</a></li>
-                                {%  for document in documents %}
-                                    <li class="nav-item"><a class="nav-link" href="{{ document.file.url }} " target="_blank"><i class="fa fa-download" style="margin-right: 5px" ></i>{{ document.button_text }}</a></li>
-                                {% endfor %}
+
 							</ul>
 						</div>
 					</div>

@@ -1,20 +1,36 @@
 from django.shortcuts import render, redirect,get_object_or_404
 from core.models import GeneralSetting, ImageSettings, Skill, Experience, Education, SocialMedia, Document
 
+def get_general_setting(parameter):
+    try:
+        obj= GeneralSetting.objects.get(name=parameter).parameter
+    except:
+        obj=""
+    return obj
+
+def get_image_setting(parameter):
+    try:
+        obj= ImageSettings.objects.get(name=parameter).file
+    except:
+        obj=""
+    return obj
+
 def layout(request):
-    documents= Document.objects.all()
-    site_title = GeneralSetting.objects.get(name="site_title").parameters
-    site_keywords = GeneralSetting.objects.get(name="site_keywords").parameters
-    site_description = GeneralSetting.objects.get(name="site_description").parameters
-    home_banner_name = GeneralSetting.objects.get(name="home_banner_name").parameters
-    home_banner_title = GeneralSetting.objects.get(name="home_banner_title").parameters
-    home_banner_description = GeneralSetting.objects.get(name="home_banner_description").parameters
-    about_myself_welcome = GeneralSetting.objects.get(name="about_myself_welcome").parameters
-    about_myself_footer = GeneralSetting.objects.get(name="about_myself_footer").parameters
+    site_title = get_general_setting('site_title')
+    site_keywords = get_general_setting('site_keywords')
+    site_description = get_general_setting('site_description')
+    home_banner_name = get_general_setting('home_banner_name')
+    home_banner_title = get_general_setting('home_banner_title')
+    home_banner_description = get_general_setting('home_banner_description')
+    about_myself_welcome = get_general_setting('about_myself_welcome')
+    about_myself_footer = get_general_setting('about_myself_footer')
+
+
+
     # Images
-    header_logo = ImageSettings.objects.get(name="header_logo").file
-    home_banner_image = ImageSettings.objects.get(name="home_banner_image").file
-    site_favicon = ImageSettings.objects.get(name="site_favicon").file
+    header_logo = get_image_setting('header_logo')
+    home_banner_image = get_image_setting('home_banner_image')
+    site_favicon = get_image_setting('site_favicon')
     # Social Media
     social_media = SocialMedia.objects.all().order_by('order')
 
@@ -38,7 +54,7 @@ def layout(request):
     }
     return context
 # Create your views here.
-def index(request):
+def about(request):
 
     #Skills
     skills =Skill.objects.all().order_by('order')
@@ -67,3 +83,6 @@ def redirect_urls(request,slug):
         return  redirect(doc.file.url)
     else:
         return redirect('index')
+
+def home(request):
+    return render(request,template_name="home.html")

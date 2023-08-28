@@ -82,10 +82,7 @@ WSGI_APPLICATION = 'resume1.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': env.db()
 }
 
 
@@ -136,3 +133,21 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#E-mail Settings
+#vars().update(env.email_url())
+#DEFAULT_FROM_EMAIL = 'GİZEM ÇIRIKKA <gizemcirikka@outlook.com>'
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+import os
+
+
+EMAIL_HOST = 'smtp.office365.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'gizem.cirikka@outlook.com'
+EMAIL_HOST_PASSWORD = env('EMAIL_PASSWORD')
+DEFAULT_FROM_EMAIL = 'gizem.cirikka@outlook.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = 'Gizem Çırıkka <gizem.cirikka@outlook.com>'
+# SECURITY WARNING: don't run with debug turned on in production!
