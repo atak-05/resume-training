@@ -8,7 +8,6 @@ services:
       - "5432:5432"
     volumes:
       - "postgresql-data:/var/lib/postgresql/data"
-    command: -p 5432
 
   app:
     build:
@@ -22,10 +21,11 @@ services:
       - .:/srv/app
     ports:
       - "0.0.0.0:8000:8000"
-    command: python manage.py runserver 0.0.0.0:8000
+    command: gunicorn resume1.wsgi:application --bind 0.0.0.0:8000
 
 
 volumes:
-  static-data:
   postgresql-data:
+  static-data:
+
 
