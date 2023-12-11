@@ -1,16 +1,17 @@
 from django.shortcuts import render, redirect,get_object_or_404
 from core.models import GeneralSetting, ImageSettings, Skill, Experience, Education, SocialMedia, Document
 
-def get_general_setting(parameter):
+def get_general_setting(parameters):
     try:
-        obj= GeneralSetting.objects.get(name=parameter).parameter
+        obj= GeneralSetting.objects.get(name=parameters).parameters
     except:
         obj=""
+
     return obj
 
-def get_image_setting(parameter):
+def get_image_setting(parameters):
     try:
-        obj= ImageSettings.objects.get(name=parameter).file
+        obj= ImageSettings.objects.get(name=parameters).file
     except:
         obj=""
     return obj
@@ -50,7 +51,6 @@ def layout(request):
         'site_favicon': site_favicon,
         'social_media': social_media,
         'documents': documents,
-
     }
     return context
 # Create your views here.
@@ -68,12 +68,9 @@ def about(request):
 
 
     context = {
-
         'skills':skills,
         'experiences':experiences,
         'educations':educations,
-
-
     }
     return render(request, "index.html", context=context)
 
@@ -85,4 +82,21 @@ def redirect_urls(request,slug):
         return redirect('index')
 
 def home(request):
-    return render(request,template_name="home.html")
+
+    #Skills
+    skills =Skill.objects.all().order_by('order')
+
+    #Experience
+    experiences =Experience.objects.all().order_by('-start_date')
+
+    #Education
+    educations =Education.objects.all().order_by('-start_date')
+
+
+
+    context = {
+        'skills':skills,
+        'experiences':experiences,
+        'educations':educations,
+    }
+    return render(request, "home_1.html", context=context)

@@ -2,22 +2,22 @@
 <!doctype html>
 <html lang="en">
 <!--================Head  =================-->
-    {% include 'includes/head.html' %}
-    <body>
+{% include 'includes/head.html' %}
+<body>
 
-        <!--================Header Menu Area =================-->
-        {%  include 'includes/navbar.html' %}
-        <!--================Header Menu Area =================-->
-     <!--================Home Banner Area =================-->
-        
+<!--================Header Menu Area =================-->
+{% include 'includes/navbar_1.html' %}
+<!--================Header Menu Area =================-->
+<!--================Home Banner Area =================-->
 
-                        {% block banner_area %} {% endblock %}
 
-                
+{% block banner_area %} {% endblock %}
 
-        {% block content %}{% endblock %}
+
+
+{% block content %}{% endblock %}
 
 {% include 'includes/footer.html' %}
 {% block extra_block %}{% endblock %}
-    </body>
+</body>
 </html>

@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+<!--================Head Area =================-->
+{% include 'includes/head.html' %}
+<body>
+<!--================Navbar  Area =================-->
+{% include 'includes/navbar_1.html' %}
+<!--================Head Emd Area =================-->
+
+{% block content %}
+    <!--================Blog Area =================-->
+    <section class="blog_area single-post-area p_120">
+        <div class="container-fluid text-bg-dark bg-danger">
+
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit
+                                            longer.</p>
+                                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+
+                                </div>
+
+    </section>
+{% endblock %}
+
+<!--================Footer Area =================-->
+
+<!--================End Footer Area =================-->
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+{% include 'includes/footer.html' %}
+</body>
+</html>
