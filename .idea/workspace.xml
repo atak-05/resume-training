@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="refactor: edited home page">
+    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="refactor: added component for home page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home_1.html" afterDir="false" />
     </list>
@@ -249,7 +249,7 @@
       <workItem from="1701948678106" duration="3391000" />
       <workItem from="1702293349716" duration="4039000" />
       <workItem from="1702297538058" duration="2603000" />
-      <workItem from="1703072210004" duration="4753000" />
+      <workItem from="1703072210004" duration="7392000" />
     </task>
     <task id="LOCAL-00001" summary="del : deleted unwanted files">
       <option name="closed" value="true" />
@@ -595,7 +595,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702300303373</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="refactor: added component for home page">
+      <option name="closed" value="true" />
+      <created>1703077319923</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1703077319923</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +622,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat:  create contact page" />
     <MESSAGE value="refactor:  create includes" />
     <MESSAGE value="refactor:  create layout" />
     <MESSAGE value="feat:  create static-media tags and urls" />
@@ -639,6 +646,7 @@
     <MESSAGE value="feat: create postgres database in docker" />
     <MESSAGE value="feat: added gunicorn" />
     <MESSAGE value="refactor: edited home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: edited home page" />
+    <MESSAGE value="refactor: added component for home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: added component for home page" />
   </component>
 </project>
