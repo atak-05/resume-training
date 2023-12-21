@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="refactor: added component for home page">
+    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="refactor: designed homepage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/breadcrumb.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/scss/breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/scss/breadcrumb.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/navbar_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/navbar_1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +255,8 @@
       <workItem from="1701948678106" duration="3391000" />
       <workItem from="1702293349716" duration="4039000" />
       <workItem from="1702297538058" duration="2603000" />
-      <workItem from="1703072210004" duration="7392000" />
+      <workItem from="1703072210004" duration="7448000" />
+      <workItem from="1703157751378" duration="8758000" />
     </task>
     <task id="LOCAL-00001" summary="del : deleted unwanted files">
       <option name="closed" value="true" />
@@ -603,7 +610,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703077319923</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="refactor: designed homepage">
+      <option name="closed" value="true" />
+      <created>1703081845183</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1703081845183</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +637,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactor:  create includes" />
     <MESSAGE value="refactor:  create layout" />
     <MESSAGE value="feat:  create static-media tags and urls" />
     <MESSAGE value="refactor: create includes for index and contact" />
@@ -647,6 +661,7 @@
     <MESSAGE value="feat: added gunicorn" />
     <MESSAGE value="refactor: edited home page" />
     <MESSAGE value="refactor: added component for home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: added component for home page" />
+    <MESSAGE value="refactor: designed homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: designed homepage" />
   </component>
 </project>
