@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="refactor: editing homepage">
+    <list default="true" id="a5edd9ba-63f6-4ef1-acac-48192db7dbf9" name="Changes" comment="refactor:finish navbar and navbar brand">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/navbar_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/navbar_1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +251,7 @@
       <workItem from="1702297538058" duration="2603000" />
       <workItem from="1703072210004" duration="7448000" />
       <workItem from="1703157751378" duration="9064000" />
-      <workItem from="1704800772181" duration="5259000" />
+      <workItem from="1704800772181" duration="6083000" />
     </task>
     <task id="LOCAL-00001" summary="del : deleted unwanted files">
       <option name="closed" value="true" />
@@ -624,7 +621,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703167409067</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="refactor:finish navbar and navbar brand">
+      <option name="closed" value="true" />
+      <created>1704806522510</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1704806522579</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +648,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat:  create static-media tags and urls" />
     <MESSAGE value="refactor: create includes for index and contact" />
     <MESSAGE value="refactor: create layout structure" />
     <MESSAGE value="feat: create contact application" />
@@ -668,6 +672,7 @@
     <MESSAGE value="refactor: added component for home page" />
     <MESSAGE value="refactor: designed homepage" />
     <MESSAGE value="refactor: editing homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: editing homepage" />
+    <MESSAGE value="refactor:finish navbar and navbar brand" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor:finish navbar and navbar brand" />
   </component>
 </project>
