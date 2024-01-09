@@ -4207,7 +4207,8 @@ input[type=submit].btn-block {
 
 .navbar-brand:focus,
 .navbar-brand:hover {
-    text-decoration: none
+    text-decoration: none;
+    margin-right: 0px;
 }
 
 .navbar-nav {
