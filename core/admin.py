@@ -19,7 +19,14 @@ class ImageSettings(admin.ModelAdmin):
     class Meta:
         model =ImageSettings
 
+@admin.register(VideoSettings)
+class VideoSettings(admin.ModelAdmin):
+    list_display = ['id','order','name', 'description',  'file']
+    search_fields = ['name', ]
+    list_editable = ['order','description']
 
+    class Meta:
+        model = VideoSettings
 
 @admin.register(Skill)
 class Skill(admin.ModelAdmin):

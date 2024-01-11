@@ -14,7 +14,7 @@
 {% block content %}
     <!--================Blog Area =================-->
 
- <section class="home_banner_area ">
+    <section class="home_banner_area ">
         <div class="container box_1620 ">
             <div class="row">
                 <div class="col-sm-8 mt-5">
@@ -25,7 +25,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"> <a href="www.google.com">Card title</a></h5>
+                                    <h5 class="card-title"><a href="www.google.com">Card title</a></h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
@@ -34,14 +34,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3" >
+                    <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="{{ home_banner_image.url }}" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"> <a href="www.google.com">Card title</a></h5>
+                                    <h5 class="card-title"><a href="www.google.com">Card title</a></h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
@@ -50,14 +50,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3" >
+                    <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="{{ home_banner_image.url }}" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"> <a href="www.google.com">Card title</a></h5>
+                                    <h5 class="card-title"><a href="www.google.com">Card title</a></h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
@@ -66,14 +66,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3" >
+                    <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="{{ home_banner_image.url }}" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"> <a href="www.google.com">Card title</a></h5>
+                                    <h5 class="card-title"><a href="www.google.com">Card title</a></h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
@@ -82,14 +82,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-3" >
+                    <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="{{ home_banner_image.url }}" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"> <a href="www.google.com">Card title</a></h5>
+                                    <h5 class="card-title"><a href="www.google.com">Card title</a></h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
@@ -98,10 +98,11 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <!--================Sidebar =================-->
                 <div class="col-sm-4 mt-5 ">
-                    <div  style="width: 18rem;margin-bottom: 100px;">
+                    <div style="width: 18rem;margin-bottom: 100px;">
                         <p class="h1" style="font-family: Roboto"> Populer Yazılar </p>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><a href="http://localhost:8000/about-me">An item</a></li>
@@ -109,8 +110,8 @@
                             <li class="list-group-item">A third item</li>
                         </ul>
                     </div>
-                    <div  style="width: 15rem;">
-                        <p class="h1" style="font-family: Roboto"> En Çok Okunanlar  </p>
+                    <div style="width: 15rem;">
+                        <p class="h1" style="font-family: Roboto"> En Çok Okunanlar </p>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><a href="http://localhost:8000/about-me">An item</a></li>
                             <li class="list-group-item">A second item</li>
@@ -118,12 +119,38 @@
                         </ul>
                     </div>
                 </div>
-    <!--================Sidebar End  =================-->
+                <!--================Sidebar End  =================-->
             </div>
         </div>
     </section>
+    <div class="container">
+        <div class="main_title">
+            <h2>Videolar</h2>
+            <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price.
+                You may see some for as low as $.17 each.</p>
+        </div>
+
+
+   <div class="testi_inner">
+            <div class="testi_slider owl-carousel">
+                {% for video in videos %}
+                     <div>
+                        <h2>{{ video.name }}</h2>
+                        <video controls width="600" style="margin-right: 30px">
+                            <source src="{{ video.file.url }}" type="{{ video.file.mime_type }}">
+                            Tarayıcınız video etiketini desteklemiyor.
+                        </video>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+    </div>
 {% endblock %}
 <!--================Footer Area =================-->
+<!--================Testimonials Area =================-->
+
 
 <!--================End Footer Area =================-->
 

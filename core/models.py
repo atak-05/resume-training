@@ -41,6 +41,20 @@ class ImageSettings(AbstractModel):
         verbose_name_plural = "Image Settings"
         ordering = ("name",)
 
+class VideoSettings(models.Model):
+    order = models.IntegerField(default=0, verbose_name="Order")
+    name = models.CharField(default='', max_length=254, blank=True, verbose_name='Name',
+                            help_text='This is a variable of setting.')
+    description = models.CharField(default='', max_length=254, blank=True, verbose_name='Description', help_text='')
+    file = models.FileField(default='', blank=True, verbose_name='Video', help_text='', upload_to='videos/')
+
+    def __str__(self):
+        return f"Video Setting: {self.name}"
+
+    class Meta:
+        verbose_name = "Video Setting"
+        verbose_name_plural = "Video Settings"
+        ordering = ("order",)
 
 class Skill(AbstractModel):
     order = models.IntegerField(default=0, verbose_name="Order")

@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect,get_object_or_404
-from core.models import GeneralSetting, ImageSettings, Skill, Experience, Education, SocialMedia, Document
+from core.models import GeneralSetting, ImageSettings, Skill, Experience, Education, SocialMedia, Document, VideoSettings
 
 def get_general_setting(parameters):
     try:
@@ -12,6 +12,13 @@ def get_general_setting(parameters):
 def get_image_setting(parameters):
     try:
         obj= ImageSettings.objects.get(name=parameters).file
+    except:
+        obj=""
+    return obj
+
+def get_video_setting(parameters):
+    try:
+        obj= VideoSettings.objects.get(name=parameters).file
     except:
         obj=""
     return obj
@@ -32,6 +39,11 @@ def layout(request):
     header_logo = get_image_setting('header_logo')
     home_banner_image = get_image_setting('home_banner_image')
     site_favicon = get_image_setting('site_favicon')
+
+
+    # Videos
+
+    videos = VideoSettings.objects.all().order_by('order')
     # Social Media
     social_media = SocialMedia.objects.all().order_by('order')
 
@@ -51,6 +63,7 @@ def layout(request):
         'site_favicon': site_favicon,
         'social_media': social_media,
         'documents': documents,
+        'videos': videos,
     }
     return context
 # Create your views here.
@@ -92,11 +105,12 @@ def home(request):
     #Education
     educations =Education.objects.all().order_by('-start_date')
 
-
+    videos = VideoSettings.objects.all().order_by('order')
 
     context = {
         'skills':skills,
         'experiences':experiences,
         'educations':educations,
+        'videos':videos,
     }
     return render(request, "home_1.html", context=context)
